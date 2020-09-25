@@ -4,7 +4,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
-  <title>Document</title>
+  <title>Login</title>
+  <style>
+      :root {
+        --white: #fff;
+        --accent-color: #b5838d;
+        --dark-accent-color: #a6757f;
+        --main-color: #6d6875;
+        --dark-main-color: #56505f;
+      }
+      .wave {
+        display: block;
+        animation: waving 3s infinite;
+      }
+      @keyframes waving {
+        0% {
+          transform: rotate(30deg);
+        }
+        50% {
+          transform: rotate(-15deg);
+        }
+        100 {
+          transform: rotate(30deg);
+        }
+      }
+      body {
+        background: rgb(255, 180, 162);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 180, 162, 1) 0%,
+          rgba(255, 180, 162, 1) 53%,
+          rgba(229, 152, 155, 1) 100%
+        );
+        color: var(--main-color);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Roboto", sans-serif;
+      }
+      h1,
+      a {
+        text-align: center;
+      }
+      button {
+        font-size: 0.8em;
+        color: var(--white);
+        padding: 1em;
+        margin: 0.5em;
+        border-radius: 5px;
+        border-width: 0px;
+        text-transform: uppercase;
+      }
+      input {
+        padding: 1em;
+        border-radius: 0px;
+        border: 0px;
+        border-radius: 5px;
+        background-color: hsl(0, 0%, 95%);
+      }
+      .container {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        max-width: 250px;
+        background-color: var(--white);
+        padding: 2em;
+        border-radius: 5px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+        border-top: 10px solid var(--accent-color);
+      }
+      .signup {
+        background-color: var(--accent-color);
+      }
+      .signup:hover {
+        background-color: var(--dark-accent-color);
+      }
+      .login {
+        background-color: var(--main-color);
+      }
+      .login:hover {
+        background-color: var(--dark-main-color);
+      }
+      .disclaimer {
+        font-size: 0.9em;
+      }
+      a {
+        color: var(--main-color);
+      }
+      a:hover {
+        color: var(--dark-main-color);
+      }
+    </style>
 </head>
 <body>
   <div class="container">
